@@ -1,4 +1,4 @@
-package com.example.model;
+package base.animal.model;
 
 public class Animal {
     private int id;
@@ -18,6 +18,8 @@ public class Animal {
         this.description = other.description;
         this.age = other.age;
         this.id = other.id;
+        this.star = other.star;
+        this.winner = other.winner;
     }
 
     public Animal(String name, String type, String description, int age){
@@ -35,6 +37,61 @@ public class Animal {
         this.age = age;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id){
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public boolean isStar() {
+        return star;
+    }
+
+    public void setStar(boolean star) {
+        this.star = star;
+    }
+
+    public boolean isWinner() {
+        return winner;
+    }
+
+    public void setWinner(boolean winner) {
+        this.winner = winner;
+    }
 
     @Override
     public String toString() {
